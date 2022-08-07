@@ -1,13 +1,24 @@
-<div class="leaderBoard">
-    <p>grades works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Grade</th>
+        <th scope="col">Class</th>
+        <th scope="col">Teacher</th>
+      </tr>
+    </thead>
+    <tbody>
 
-    <div *ngFor="let grade of grades">
+        <tr *ngFor="let grade of grades; let i = index">
 
-        <p>{{grade.grade}}</p>
-        <p>{{grade.class}}</p>
-        <p>{{grade.teacher}}</p>
+            <th scope="row">{{i + 1}}</th>
+            <td>{{grade.grade}}</td>
+            <td>{{grade.class}}</td>
+            <td>{{grade.teacher}}</td>
+           
 
-    </div>
-
-</div>
+        </tr>
+        
+    </tbody>
+</table> 
 
