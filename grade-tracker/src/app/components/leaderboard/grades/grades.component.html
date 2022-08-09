@@ -1,24 +1,30 @@
 <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Grade</th>
-        <th scope="col">Class</th>
-        <th scope="col">Teacher</th>
-      </tr>
-    </thead>
+
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Grade</th>
+      <th scope="col">Class</th>
+      <th scope="col">Teacher</th>
+    </tr>
+  </thead>
+
     <tbody>
 
-        <tr *ngFor="let grade of grades; let i = index">
 
-            <th scope="row">{{i + 1}}</th>
-            <td>{{grade.grade}}</td>
-            <td>{{grade.class}}</td>
-            <td>{{grade.teacher}}</td>
-           
+      <tr *ngFor="let grade of grades; let i = index">
 
-        </tr>
-        
+        <th scope="row">{{i + 1}}</th>
+        <td>{{grade.mark}}</td>
+        <td>{{grade.class}}</td>
+        <td>{{grade.teacher}}</td>
+
+      </tr>
+
+
     </tbody>
-</table> 
 
+</table>
+
+<button type="button" class="btn btn-dark" (click)="highToLow(grades)">High to Low</button>
+<button type="button" class="btn btn-dark" (click)="lowToHigh(grades)">Low To High</button>

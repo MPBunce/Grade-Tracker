@@ -1,0 +1,16 @@
+{
+  "grades": [
+    {
+      "mark": 56,
+      "class": "thr",
+      "teacher": "thr",
+      "id": 2
+    },
+    {
+      "mark": 69,
+      "class": "Intro to Poggy Woggy",
+      "teacher": "Mr Epic",
+      "id": 3
+    }
+  ]
+}

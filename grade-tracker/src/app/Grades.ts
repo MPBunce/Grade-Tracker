@@ -1,6 +1,6 @@
 export interface Grade {
     id?: number,
-    grade: number,
+    mark: number,
     class: string,
     teacher: string
 }
