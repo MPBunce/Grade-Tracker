@@ -24,12 +24,17 @@ export class GradesComponent implements OnInit {
 
   highToLow(grades){
 
+    grades = grades.sort(function(a, b){
+      return a.mark - b.mark
+    })
 
   }
 
   lowToHigh(grades){
 
-
+    grades = grades.sort(function(a, b){
+      return b.mark - a.mark
+    })
 
   }
 
