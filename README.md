@@ -1,6 +1,9 @@
 # Grade-Tracker
 Grade tracker application developed using the Angular framework. CRUD features and a leaderboard which can be filtered low to high or high to low. Data stored using json server.
 
+Start Server: npm run server
+
+Start Angular Application: ng serve
 
 ![image](https://user-images.githubusercontent.com/77083766/183786241-90c9758b-0f12-444f-964f-4e34cd74f905.png)
 
